@@ -1,0 +1,106 @@
+[
+  {
+    "source": "^I am on the (.*) Home Page$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/basic_internet_search_steps.rb:1",
+    "steps": [
+      {
+        "name": "I am on the <search engine> Home Page",
+        "args": [
+          {
+            "offset": 12,
+            "val": "<search engine>"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I search for \"([^\"]*)\"$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/basic_internet_search_steps.rb:7",
+    "steps": [
+      {
+        "name": "I search for \"Watir\"",
+        "args": [
+          {
+            "offset": 14,
+            "val": "Watir"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should see at least (.*) results$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/basic_internet_search_steps.rb:10",
+    "steps": [
+      {
+        "name": "I should see at least <expected number of> results",
+        "args": [
+          {
+            "offset": 22,
+            "val": "<expected number of>"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I convert (\\d+) cm to inches$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/basic_internet_search_steps.rb:16",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^I should see the conversion result \"([^\"]*)\"$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/basic_internet_search_steps.rb:19",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^I search for a ridiculously small number of results$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/basic_internet_search_steps.rb:22",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^I should see at most (\\d+) results$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/basic_internet_search_steps.rb:25",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^I have two number ([-+]?[0-9]*\\.?[0-9]+) and ([-+]?[0-9]*\\.?[0-9]+) into the calculator$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/simple_calculator_steps.rb:1",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^I perform (addition|subtraction|multiplication|division)$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/simple_calculator_steps.rb:5",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^the result should be ([-+]?[0-9]*\\.?[0-9]+) on the screen$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/simple_calculator_steps.rb:9",
+    "steps": [
+
+    ]
+  }
+]
