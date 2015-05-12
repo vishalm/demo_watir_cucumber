@@ -2,6 +2,7 @@ require 'rspec'
 require 'watir-webdriver'
 require 'cucumber'
 require 'rake'
+require 'spreadsheet'
 #require 'page-object'
 
 #require 'spec/spec_helper'

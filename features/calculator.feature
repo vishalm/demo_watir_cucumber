@@ -15,6 +15,13 @@ Feature: Simple Calculator
     When I perform subtraction
     Then the result should be 20 on the screen
 
+  Scenario: Using Excel as data source and performing Subtraction of two numbers
+    Given I have excel test data source
+    When I perform operation
+    Then the result should expected
+
+
+
   @simple_calculator
   Scenario: Multiplication two numbers
     Given I have two number 5 and 70 into the calculator

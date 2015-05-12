@@ -1,5 +1,5 @@
 class SimpleCalculator
-  def initialize op1,op2
+  def initialize op1 = 4,op2 = 2
     @op1 = op1
     @op2 = op2
   end
