@@ -26,8 +26,6 @@ Build
 1. Execute Windows batch command :
     @REM File to be deleted
     SET FileToDelete="C:\..\demo_watir_cucumber\report\features_report.html"
-
-
     IF EXIST %FileToDelete% del /F %FileToDelete%
 
 2. Execute Windows batch command :
