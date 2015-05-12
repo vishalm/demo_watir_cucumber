@@ -1,7 +1,6 @@
 class BingSearchResultPage < BrowserContainer
 
   def get_results_count_text
-    sleep 2
     @browser.span(:class => "sb_count").text
   end
 

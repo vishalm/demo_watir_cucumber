@@ -3,5 +3,4 @@ gem "rake"
 gem "cucumber"
 gem "rspec"
 gem "watir-webdriver"
-gem "zip"
-#gem "page-object"
+# gem 'pickle'

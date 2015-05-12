@@ -1,2 +1,10 @@
-default: -r features --tags ~@wip --color --format pretty --format html -o results.html --dotcucumber features/.cucumber
-ci: -r features DISPLAY=:99.0 HEADLESS=true TRAVIS=true --tags ~@wip --format progress --format html -o results.html --format junit -o junit
+default: -p selenium
+html_report: --format pretty --format json --out=report/features_report.json
+parallel: --format progress --format ParallelTests::Cucumber::FailuresLogger --out tmp/cucumber_failures.log
+bvt: --tags @test
+selenium : DRIVER=selenium
+
+
+jenkin:  --no-source --format pretty --format json --tags ~@not_ready
+slow:  --no-source --format pretty --tags @slow --tags ~@not_ready
+fast:  --no-source --format pretty --tags @~slow, ~@not_ready

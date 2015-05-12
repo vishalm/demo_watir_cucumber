@@ -1,8 +1,6 @@
 class GoogleSearchResultPage < GoogleHomePage
 
   def get_results_count_text
-    # @browser.div(:id => "resultStats").wait_while_present
-    sleep 2
     @browser.div(:id => "resultStats").text
   end
 

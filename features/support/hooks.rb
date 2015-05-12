@@ -1,8 +1,8 @@
-Before do
+Before ('@watir')do
    launch_browser
 end
 
 
-After do
+After ('@watir') do
    quit_browser
 end

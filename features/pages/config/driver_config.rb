@@ -1,7 +1,9 @@
 module Automation
 
   def launch_browser
+    include Zip
     @browser = Watir::Browser.new :firefox
+    @browser.driver.manage.timeouts.implicit_wait = 30
     #@driver.default_timeout = 90
     #@driver.manage.window.maximize
     @browser.driver.manage.window.maximize
@@ -14,6 +16,7 @@ module Automation
   def quit_browser
     @browser.close
   end
+
   #def wait_for_element element_hash
   #  wait = Selenium::WebDriver::Wait.new(:timeout => 0.5) # seconds
   #  begin

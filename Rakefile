@@ -1,9 +1,26 @@
-require 'cucumber'
+require 'rubygems'
+require 'bundler'
+require 'bundler/setup'
+# require 'parallel_tests/tasks'
 require 'cucumber/rake/task'
 
-Cucumber::Rake::Task.new(:cucumber) do |t|
-  t.profile = 'ci'
+#
+# require 'cucumber/rake/task'
+Cucumber::Rake::Task.new(:features) do |features|
+  features.cucumber_opts = "features -p selenium --format progress --format json --out=report/features_report.json"
 end
+#
+#
+#
+# Cucumber::Rake::Task.new(:features_ci) do |t|
+#   t.profile = 'ci'
+# end
+#
+# task :default => :features_ci
 
-task :default => :cucumber
 
+# Cucumber::Rake::Task.new(:features) do |t|
+#   t.profile = 'ci'
+# end
+#
+# task :default => :jenkin

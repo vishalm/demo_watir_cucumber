@@ -2,14 +2,12 @@ Given(/^I am on the (.*) Home Page$/) do |search_page|
   @search_page = search_page
   @search_engine = Object.const_get("#{search_page}HomePage").new(@browser)
   @search_engine.open
-  # expect(@search_engine.is_current_page?).to be true
+  @search_engine.is_current_page?.should == true
 end
 When(/^I search for "([^"]*)"$/) do |arg|
   @search_engine.search_for arg
 end
 Then(/^I should see at least (.*) results$/) do |expected_number_of|
-  # search_result = GoogleSearchResultPage.new(@browser)
-  # search_result.number_search_results.should >= expected_number_of.gsub(",","").to_i
   search_result = Object.const_get("#{@search_page}SearchResultPage").new(@browser)
   search_result.number_search_results.should >= expected_number_of.gsub(",","").to_i
 end
