@@ -3,7 +3,7 @@ require 'watir-webdriver'
 require 'cucumber'
 require 'rake'
 require 'spreadsheet'
-# require 'pickle'
+require 'roo'
 
 
 

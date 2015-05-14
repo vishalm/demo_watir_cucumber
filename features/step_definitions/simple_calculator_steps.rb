@@ -12,16 +12,23 @@ end
 
 
 Given(/^I have excel test data source$/) do
-  # test_excel = ExcelDataReader.new('../test_data/test_data.xls')
-  @test_sheet = get_excel_array
+  test_excel = ExcelDataReader.new
+  @test_sheet = test_excel.get_excel_array
 end
 
 When(/^I perform operation$/) do
-  @calc = SimpleCalculator.new()
-
-  @result = true
+  @results = Array.new
+  calc = SimpleCalculator.new()
+  @test_sheet.each do |row|
+    @results.push(calc.send(row['opt'],row['op1'],row['op2']))
+  end
 end
 
 Then(/^the result should expected$/) do
-  expect(@result).to eq(true)
+i = 0
+  @results.each do |result|
+    expect(result).to eq(@test_sheet[i]['result'])
+    i = i + 1
+  end
+
 end

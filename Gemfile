@@ -6,3 +6,4 @@ gem "watir-webdriver"
 # gem 'pickle'
 gem 'spreadsheet'
 gem 'rubyXL'
+gem 'roo'
