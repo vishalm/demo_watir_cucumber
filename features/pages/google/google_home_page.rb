@@ -1,5 +1,4 @@
 class GoogleHomePage
-
   def initialize(browser)
     @browser = browser
   end
