@@ -1,7 +1,7 @@
 require 'spreadsheet'
 
 class ExcelDataReader
-  def initialize workbook_name = 'C:\vishal\demo_watir_cucumber\features\pages\test_data\test_data.xls'
+  def initialize workbook_name = File.dirname(__FILE__) + '/test_data.xls'
     @workbook_name = workbook_name
   end
 

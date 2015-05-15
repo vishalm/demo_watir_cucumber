@@ -14,4 +14,4 @@ include RSpec::Matchers
 
 require File.dirname(__FILE__) + "/../pages/pages"
 
-CREDENTIALS = YAML.load_file('C:\vishal\demo_watir_cucumber\features\support\credentials.yml')
+CREDENTIALS = YAML.load_file(File.dirname(__FILE__) + '/credentials.yml')
