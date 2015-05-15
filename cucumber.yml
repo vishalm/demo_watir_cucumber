@@ -5,6 +5,6 @@ bvt: --tags @test
 selenium : DRIVER=selenium
 
 
-jenkin:  --no-source --format pretty --format json --tags ~@not_ready
+jenkin:  --no-source --format pretty --format json --tags ~@not_ready --out=report/features_report.json
 slow:  --no-source --format pretty --tags @slow --tags ~@not_ready
 fast:  --no-source --format pretty --tags @~slow, ~@not_ready

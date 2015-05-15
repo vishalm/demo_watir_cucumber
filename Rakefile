@@ -12,11 +12,17 @@ end
 #
 #
 #
-# Cucumber::Rake::Task.new(:features_ci) do |t|
-#   t.profile = 'ci'
-# end
-#
-# task :default => :features_ci
+Cucumber::Rake::Task.new(:features_ci) do |t|
+  t.profile = 'jenkin'
+end
+
+task :default => :features_ci
+
+Cucumber::Rake::Task.new(:feature_c)
+
+Cucumber::Rake::Task.new do |t|
+      t.cucumber_opts = %w{--format progress --format json --out=report/features_report.json }
+end
 
 
 # Cucumber::Rake::Task.new(:features) do |t|

@@ -12,14 +12,14 @@ Then(/^I should see at least (.*) results$/) do |expected_number_of|
   search_result.number_search_results.should >= expected_number_of.gsub(",","").to_i
 end
 When(/^I convert (\d+) cm to inches$/) do |arg|
-  pending
+  true.should == false
 end
 Then(/^I should see the conversion result "([^"]*)"$/) do |arg|
-  pending
+  true.should == false
 end
 When(/^I search for a ridiculously small number of results$/) do
-  pending
+  true.should == false
 end
 Then(/^I should see at most (\d+) results$/) do |arg|
-  pending
+  true.should == false
 end

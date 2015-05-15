@@ -36,7 +36,7 @@ Build
 3. Execute Windows batch command :
      set PATH=C:\Ruby193\bin
      cd C:\..\demo_watir_cucumber
-     cucumber --no-source --format pretty --format html --out=report\features_report.html
+     cucumber --no-source --format pretty --format json --out=report\features_report.json
 
 4.  Execute Windows batch command :
     set PATH=C:\Ruby193\bin
