@@ -1,6 +1,8 @@
 results.html
+*.json
 .idea/*
 *.*lock
 .bundle/*
 junit*
 chromedriver.log
+report/features_report.json
