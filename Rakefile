@@ -20,7 +20,7 @@ task :default => :features_ci
 
 Cucumber::Rake::Task.new(:feature_c)
 
-Cucumber::Rake::Task.new do |t|
+Cucumber::Rake::Task.new(:cuke) do |t|
       t.cucumber_opts = %w{--format progress --format json --out=report/features_report.json }
 end
 

@@ -48,3 +48,13 @@ Build
     HTML directory to archive : C:\..\demo_watir_cucumber\report
     Index page[s] : features_report.html
     Report title: Cucumber Report
+Alternate way
+Install ruby plugin
+SET RUBY_HOME in path
+Install rake plugin
+Give Rake Task Name
+
+*Some Handy URL
+    https://github.com/cucumber/cucumber/wiki/Tutorials-and-Related-Blog-Posts
+    https://github.com/watir/watir/wiki/Cheat-Sheet-for-Ruby
+    https://github.com/watir/watir/wiki/Cheat-Sheet

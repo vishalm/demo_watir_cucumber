@@ -1,0 +1,936 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Basic Internet Search",
+    "line": 2,
+    "description": "As a casual internet user\nI want to learn about watir, and do a quick updates\nSo that I can be knowledgeable being",
+    "id": "basic-internet-search",
+    "uri": "features/basic_internet_search.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "name": "On google Search for Watir",
+        "line": 8,
+        "description": "",
+        "tags": [
+          {
+            "name": "@watir",
+            "line": 7
+          }
+        ],
+        "id": "basic-internet-search;on-google-search-for-watir",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Google Home Page",
+            "line": 9,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 12,
+                  "val": "Google"
+                }
+              ],
+              "location": "features/step_definitions/basic_internet_search_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4175010999
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I search for \"Watir\"",
+            "line": 10,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Watir"
+                }
+              ],
+              "location": "features/step_definitions/basic_internet_search_steps.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4067154999
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see at least 100,000 results",
+            "line": 11,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 22,
+                  "val": "100,000"
+                }
+              ],
+              "location": "features/step_definitions/basic_internet_search_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1308842000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "On bing Search for Watir",
+        "line": 14,
+        "description": "",
+        "tags": [
+          {
+            "name": "@watir",
+            "line": 13
+          }
+        ],
+        "id": "basic-internet-search;on-bing-search-for-watir",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Bing Home Page",
+            "line": 15,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 12,
+                  "val": "Bing"
+                }
+              ],
+              "location": "features/step_definitions/basic_internet_search_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2574083000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I search for \"Watir\"",
+            "line": 16,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Watir"
+                }
+              ],
+              "location": "features/step_definitions/basic_internet_search_steps.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3809396000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see at least 30,000 results",
+            "line": 17,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 22,
+                  "val": "30,000"
+                }
+              ],
+              "location": "features/step_definitions/basic_internet_search_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2749308000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario Outline",
+        "name": "Search for Watir",
+        "line": 20,
+        "description": "",
+        "tags": [
+          {
+            "name": "@watir",
+            "line": 19
+          }
+        ],
+        "id": "basic-internet-search;search-for-watir",
+        "type": "scenario_outline",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the <search engine> Home Page",
+            "line": 21,
+            "match": {
+              "location": "features/basic_internet_search.feature:21"
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I search for \"Watir\"",
+            "line": 22,
+            "match": {
+              "location": "features/basic_internet_search.feature:22"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see at least <expected number of> results",
+            "line": 23,
+            "match": {
+              "location": "features/basic_internet_search.feature:23"
+            }
+          }
+        ],
+        "examples": [
+          {
+            "keyword": "Scenarios",
+            "name": "",
+            "line": 24,
+            "description": "",
+            "id": "basic-internet-search;search-for-watir;",
+            "rows": [
+              {
+                "cells": [
+                  "search engine",
+                  "expected number of"
+                ],
+                "line": 25,
+                "id": "basic-internet-search;search-for-watir;;1"
+              },
+              {
+                "cells": [
+                  "Google",
+                  "100,000"
+                ],
+                "line": 26,
+                "id": "basic-internet-search;search-for-watir;;2"
+              },
+              {
+                "cells": [
+                  "Bing",
+                  "30,000"
+                ],
+                "line": 27,
+                "id": "basic-internet-search;search-for-watir;;3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario Outline",
+        "name": "Do a unit conversion",
+        "line": 30,
+        "description": "",
+        "tags": [
+          {
+            "name": "@watir",
+            "line": 29
+          }
+        ],
+        "id": "basic-internet-search;do-a-unit-conversion",
+        "type": "scenario_outline",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the <search engine> Home Page",
+            "line": 31,
+            "match": {
+              "location": "features/basic_internet_search.feature:31"
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I convert 10 cm to inches",
+            "line": 32,
+            "match": {
+              "location": "features/basic_internet_search.feature:32"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see the conversion result \"<as expected>\"",
+            "line": 33,
+            "match": {
+              "location": "features/basic_internet_search.feature:33"
+            }
+          }
+        ],
+        "examples": [
+          {
+            "keyword": "Scenarios",
+            "name": "",
+            "line": 34,
+            "description": "",
+            "id": "basic-internet-search;do-a-unit-conversion;",
+            "rows": [
+              {
+                "cells": [
+                  "search engine",
+                  "as expected"
+                ],
+                "line": 35,
+                "id": "basic-internet-search;do-a-unit-conversion;;1"
+              },
+              {
+                "cells": [
+                  "Google",
+                  "10 Centimeter = 3.93701 Inch"
+                ],
+                "line": 36,
+                "id": "basic-internet-search;do-a-unit-conversion;;2"
+              },
+              {
+                "cells": [
+                  "Bing",
+                  "10 centimeters = 3.93700787 inches"
+                ],
+                "line": 37,
+                "id": "basic-internet-search;do-a-unit-conversion;;3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario Outline",
+        "name": "Do a search using data specified externally",
+        "line": 40,
+        "description": "",
+        "tags": [
+          {
+            "name": "@watir",
+            "line": 39
+          }
+        ],
+        "id": "basic-internet-search;do-a-search-using-data-specified-externally",
+        "type": "scenario_outline",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the <search engine> Home Page",
+            "line": 41,
+            "match": {
+              "location": "features/basic_internet_search.feature:41"
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I search for a ridiculously small number of results",
+            "line": 42,
+            "match": {
+              "location": "features/basic_internet_search.feature:42"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see at most 200 results",
+            "line": 43,
+            "match": {
+              "location": "features/basic_internet_search.feature:43"
+            }
+          }
+        ],
+        "examples": [
+          {
+            "keyword": "Scenarios",
+            "name": "",
+            "line": 44,
+            "description": "",
+            "id": "basic-internet-search;do-a-search-using-data-specified-externally;",
+            "rows": [
+              {
+                "cells": [
+                  "search engine"
+                ],
+                "line": 45,
+                "id": "basic-internet-search;do-a-search-using-data-specified-externally;;1"
+              },
+              {
+                "cells": [
+                  "Google"
+                ],
+                "line": 46,
+                "id": "basic-internet-search;do-a-search-using-data-specified-externally;;2"
+              },
+              {
+                "cells": [
+                  "Bing"
+                ],
+                "line": 47,
+                "id": "basic-internet-search;do-a-search-using-data-specified-externally;;3"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Simple Calculator",
+    "line": 1,
+    "description": "In order to perform simple arithmetic operation\nAs a math practitioner\nI want to creat simple calculator",
+    "id": "simple-calculator",
+    "uri": "features/calculator.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "name": "Addition of two numbers",
+        "line": 7,
+        "description": "",
+        "tags": [
+          {
+            "name": "@simple_calculator",
+            "line": 6
+          }
+        ],
+        "id": "simple-calculator;addition-of-two-numbers",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I have two number 150 and 70 into the calculator",
+            "line": 8,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 18,
+                  "val": "150"
+                },
+                {
+                  "offset": 26,
+                  "val": "70"
+                }
+              ],
+              "location": "features/step_definitions/simple_calculator_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I perform addition",
+            "line": 9,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 10,
+                  "val": "addition"
+                }
+              ],
+              "location": "features/step_definitions/simple_calculator_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the result should be 220 on the screen",
+            "line": 10,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 21,
+                  "val": "220"
+                }
+              ],
+              "location": "features/step_definitions/simple_calculator_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11911000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "Subtraction of two numbers",
+        "line": 13,
+        "description": "",
+        "tags": [
+          {
+            "name": "@simple_calculator",
+            "line": 12
+          }
+        ],
+        "id": "simple-calculator;subtraction-of-two-numbers",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I have two number 70 and 50 into the calculator",
+            "line": 14,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 18,
+                  "val": "70"
+                },
+                {
+                  "offset": 25,
+                  "val": "50"
+                }
+              ],
+              "location": "features/step_definitions/simple_calculator_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I perform subtraction",
+            "line": 15,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 10,
+                  "val": "subtraction"
+                }
+              ],
+              "location": "features/step_definitions/simple_calculator_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the result should be 20 on the screen",
+            "line": 16,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 21,
+                  "val": "20"
+                }
+              ],
+              "location": "features/step_definitions/simple_calculator_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "Multiplication two numbers",
+        "line": 19,
+        "description": "",
+        "tags": [
+          {
+            "name": "@simple_calculator",
+            "line": 18
+          }
+        ],
+        "id": "simple-calculator;multiplication-two-numbers",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I have two number 5 and 70 into the calculator",
+            "line": 20,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 18,
+                  "val": "5"
+                },
+                {
+                  "offset": 24,
+                  "val": "70"
+                }
+              ],
+              "location": "features/step_definitions/simple_calculator_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I perform multiplication",
+            "line": 21,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 10,
+                  "val": "multiplication"
+                }
+              ],
+              "location": "features/step_definitions/simple_calculator_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the result should be 350 on the screen",
+            "line": 22,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 21,
+                  "val": "350"
+                }
+              ],
+              "location": "features/step_definitions/simple_calculator_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "Divide two numbers",
+        "line": 25,
+        "description": "",
+        "tags": [
+          {
+            "name": "@simple_calculator",
+            "line": 24
+          }
+        ],
+        "id": "simple-calculator;divide-two-numbers",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I have two number 88 and 11 into the calculator",
+            "line": 26,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 18,
+                  "val": "88"
+                },
+                {
+                  "offset": 25,
+                  "val": "11"
+                }
+              ],
+              "location": "features/step_definitions/simple_calculator_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I perform division",
+            "line": 27,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 10,
+                  "val": "division"
+                }
+              ],
+              "location": "features/step_definitions/simple_calculator_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the result should be 8 on the screen",
+            "line": 28,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 21,
+                  "val": "8"
+                }
+              ],
+              "location": "features/step_definitions/simple_calculator_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario Outline",
+        "name": "Perform simple arithmetic operations",
+        "line": 31,
+        "description": "",
+        "tags": [
+          {
+            "name": "@simple_calculator",
+            "line": 30
+          }
+        ],
+        "id": "simple-calculator;perform-simple-arithmetic-operations",
+        "type": "scenario_outline",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I have two number <param1> and <param2> into the calculator",
+            "line": 32,
+            "match": {
+              "location": "features/calculator.feature:32"
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I perform <operator>",
+            "line": 33,
+            "match": {
+              "location": "features/calculator.feature:33"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the result should be <expected_result> on the screen",
+            "line": 34,
+            "match": {
+              "location": "features/calculator.feature:34"
+            }
+          }
+        ],
+        "examples": [
+          {
+            "keyword": "Examples",
+            "name": "",
+            "line": 35,
+            "description": "",
+            "id": "simple-calculator;perform-simple-arithmetic-operations;",
+            "rows": [
+              {
+                "cells": [
+                  "param1",
+                  "param2",
+                  "operator",
+                  "expected_result"
+                ],
+                "line": 36,
+                "id": "simple-calculator;perform-simple-arithmetic-operations;;1"
+              },
+              {
+                "cells": [
+                  "12",
+                  "6",
+                  "division",
+                  "2"
+                ],
+                "line": 37,
+                "id": "simple-calculator;perform-simple-arithmetic-operations;;2"
+              },
+              {
+                "cells": [
+                  "6",
+                  "12",
+                  "division",
+                  "0.5"
+                ],
+                "line": 38,
+                "id": "simple-calculator;perform-simple-arithmetic-operations;;3"
+              },
+              {
+                "cells": [
+                  "1",
+                  "2",
+                  "multiplication",
+                  "2"
+                ],
+                "line": 39,
+                "id": "simple-calculator;perform-simple-arithmetic-operations;;4"
+              },
+              {
+                "cells": [
+                  "25",
+                  "10",
+                  "multiplication",
+                  "250"
+                ],
+                "line": 40,
+                "id": "simple-calculator;perform-simple-arithmetic-operations;;5"
+              },
+              {
+                "cells": [
+                  "-5",
+                  "-2",
+                  "subtraction",
+                  "-3"
+                ],
+                "line": 41,
+                "id": "simple-calculator;perform-simple-arithmetic-operations;;6"
+              },
+              {
+                "cells": [
+                  "25.5",
+                  "10",
+                  "subtraction",
+                  "15.5"
+                ],
+                "line": 42,
+                "id": "simple-calculator;perform-simple-arithmetic-operations;;7"
+              },
+              {
+                "cells": [
+                  "-5",
+                  "-3",
+                  "addition",
+                  "-8"
+                ],
+                "line": 43,
+                "id": "simple-calculator;perform-simple-arithmetic-operations;;8"
+              },
+              {
+                "cells": [
+                  "10.5",
+                  "10",
+                  "addition",
+                  "20.5"
+                ],
+                "line": 44,
+                "id": "simple-calculator;perform-simple-arithmetic-operations;;9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "Using Excel as data source and performing Subtraction of two numbers",
+        "line": 47,
+        "description": "",
+        "tags": [
+          {
+            "name": "@simple_calculator",
+            "line": 46
+          }
+        ],
+        "id": "simple-calculator;using-excel-as-data-source-and-performing-subtraction-of-two-numbers",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I have excel test data source",
+            "line": 48,
+            "match": {
+              "location": "features/step_definitions/simple_calculator_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 93756000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I perform operation",
+            "line": 49,
+            "match": {
+              "location": "features/step_definitions/simple_calculator_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the result should expected",
+            "line": 50,
+            "match": {
+              "location": "features/step_definitions/simple_calculator_steps.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Gmail",
+    "line": 1,
+    "description": "As a user\nI want to use Google mailing service\nTo send and receive emails",
+    "id": "gmail",
+    "uri": "features/gmail.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "name": "Login to gmail",
+        "line": 7,
+        "description": "",
+        "tags": [
+          {
+            "name": "@watir",
+            "line": 6
+          }
+        ],
+        "id": "gmail;login-to-gmail",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on gmail home page",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/gmail_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8194715000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I provide valid credentials",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/gmail_steps.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7547455000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see my inbox",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/gmail_steps.rb:11"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "uninitialized constant GmailInboxPage (NameError)\n./features/step_definitions/gmail_steps.rb:12:in `/^I should see my inbox$/'\nfeatures/gmail.feature:10:in `Then I should see my inbox'",
+              "duration": 1000999
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
