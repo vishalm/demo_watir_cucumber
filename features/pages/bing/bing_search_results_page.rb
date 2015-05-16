@@ -1,5 +1,15 @@
 class BingSearchResultPage < BrowserContainer
 
+  def conversion_result
+    lhs_d = @browser.text_field(:id => "uc_lv").value
+    lhs_u = @browser.select_list(:id => "uc_lt").option(:selected => 'selected').text
+    rhs_d = @browser.text_field(:id => "uc_rv").value
+    rhs_u = @browser.select_list(:id => "uc_rt").option(:selected => 'selected').text
+    result = lhs_d + " " + lhs_u + " = " + rhs_d + " " + rhs_u
+    puts result
+    result
+  end
+
   def get_results_count_text
     @browser.span(:class => "sb_count").text
   end

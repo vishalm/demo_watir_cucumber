@@ -14,4 +14,14 @@ class GoogleSearchResultPage < GoogleHomePage
     count
   end
 
+  def conversion_result
+    lhs_d = @browser.text_field(:id => "ucw_lhs_d").value
+    lhs_u = @browser.select_list(:id => "ucw_lhs_u").value
+    rhs_d = @browser.text_field(:id => "ucw_rhs_d").value
+    rhs_u = @browser.select_list(:id => "ucw_rhs_u").value
+    result = lhs_d + " " + lhs_u + " = " + rhs_d + " " + rhs_u
+    puts result
+    result
+  end
+
 end

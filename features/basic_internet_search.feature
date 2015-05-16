@@ -32,9 +32,9 @@ Feature: Basic Internet Search
     When I convert 10 cm to inches
     Then I should see the conversion result "<as expected>"
     Scenarios:
-      | search engine | as expected                         |
-      | Google        | 10 Centimeter = 3.93701 Inch        |
-      | Bing          | 10 centimeters = 3.93700787 inches  |
+      | search engine | as expected                      |
+      | Google        | 10 Centimeter = 3.93701 Inch     |
+      | Bing          | 10 Centimetre = 3.93700787 Inch  |
 
   @watir
   Scenario Outline: Do a search using data specified externally
