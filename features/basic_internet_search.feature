@@ -4,7 +4,7 @@ Feature: Basic Internet Search
   I want to learn about watir, and do a quick updates
   So that I can be knowledgeable being
 
-  @watir
+  @remote_watir
   Scenario: On google Search for Watir
     Given I am on the Google Home Page
     When I search for "Watir"

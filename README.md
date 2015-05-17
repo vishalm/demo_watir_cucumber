@@ -58,3 +58,7 @@ Build
         https://github.com/cucumber/cucumber/wiki/Tutorials-and-Related-Blog-Posts
         https://github.com/watir/watir/wiki/Cheat-Sheet-for-Ruby
         https://github.com/watir/watir/wiki/Cheat-Sheet
+
+# Run the grid
+HUB     : java -jar selenium-server-standalone-2.45.0.jar -role hub
+NODE    : java -jar selenium-server-standalone-2.45.0.jar -role node  -hub http://localhost:4444/grid/register
