@@ -6,3 +6,4 @@ results.html
 junit*
 chromedriver.log
 report/features_report.json
+features_report.json

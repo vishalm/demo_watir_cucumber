@@ -35,7 +35,8 @@
               "location": "features/step_definitions/basic_internet_search_steps.rb:1"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 6272676000
             }
           },
           {
@@ -52,7 +53,8 @@
               "location": "features/step_definitions/basic_internet_search_steps.rb:7"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3537401000
             }
           },
           {
@@ -69,7 +71,8 @@
               "location": "features/step_definitions/basic_internet_search_steps.rb:10"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1149898000
             }
           }
         ]
@@ -103,7 +106,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19016487000
+              "duration": 3223743000
             }
           },
           {
@@ -121,7 +124,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5502007000
+              "duration": 4213517999
             }
           },
           {
@@ -139,7 +142,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3922742000
+              "duration": 2504119000
             }
           }
         ]
@@ -173,7 +176,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 29132928000
+              "duration": 12216310000
             }
           },
           {
@@ -191,7 +194,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4007755000
+              "duration": 3616490000
             }
           },
           {
@@ -209,7 +212,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1099745000
+              "duration": 1108824000
             }
           }
         ]
@@ -243,7 +246,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14563099000
+              "duration": 14635975000
             }
           },
           {
@@ -261,7 +264,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9045400000
+              "duration": 3254159000
             }
           },
           {
@@ -279,7 +282,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4168400000
+              "duration": 1979075000
             }
           }
         ]
@@ -313,7 +316,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20586569000
+              "duration": 7406271000
             }
           },
           {
@@ -331,7 +334,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11235357000
+              "duration": 4130897000
             }
           },
           {
@@ -349,7 +352,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10190968000
+              "duration": 8695018000
             }
           }
         ]
@@ -383,7 +386,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5680346000
+              "duration": 3307448000
             }
           },
           {
@@ -401,7 +404,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3456615000
+              "duration": 3276323000
             }
           },
           {
@@ -419,7 +422,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6712789000
+              "duration": 6548676000
             }
           }
         ]
@@ -453,7 +456,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9624191000
+              "duration": 8185330000
             }
           },
           {
@@ -517,7 +520,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3076913000
+              "duration": 3140134000
             }
           },
           {
@@ -613,7 +616,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -631,7 +634,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11007000
+              "duration": 25017000
             }
           }
         ]
@@ -1149,7 +1152,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
@@ -1205,7 +1208,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -1279,7 +1282,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000999
+              "duration": 0
             }
           },
           {
@@ -1409,7 +1412,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000999
+              "duration": 0
             }
           },
           {
@@ -1473,7 +1476,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 150150000
+              "duration": 152143000
             }
           },
           {
@@ -1535,7 +1538,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13021829000
+              "duration": 8678413000
             }
           },
           {
@@ -1547,7 +1550,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9858986000
+              "duration": 8241246000
             }
           },
           {
@@ -1560,7 +1563,7 @@
             "result": {
               "status": "failed",
               "error_message": "uninitialized constant GmailInboxPage (NameError)\n./features/step_definitions/gmail_steps.rb:12:in `/^I should see my inbox$/'\nfeatures/gmail.feature:10:in `Then I should see my inbox'",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
