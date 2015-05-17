@@ -35,8 +35,7 @@
               "location": "features/step_definitions/basic_internet_search_steps.rb:1"
             },
             "result": {
-              "status": "passed",
-              "duration": 6272676000
+              "status": "skipped"
             }
           },
           {
@@ -53,8 +52,7 @@
               "location": "features/step_definitions/basic_internet_search_steps.rb:7"
             },
             "result": {
-              "status": "passed",
-              "duration": 3537401000
+              "status": "skipped"
             }
           },
           {
@@ -71,8 +69,7 @@
               "location": "features/step_definitions/basic_internet_search_steps.rb:10"
             },
             "result": {
-              "status": "passed",
-              "duration": 1149898000
+              "status": "skipped"
             }
           }
         ]
@@ -106,7 +103,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3223743000
+              "duration": 5674084000
             }
           },
           {
@@ -124,7 +121,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4213517999
+              "duration": 3434293000
             }
           },
           {
@@ -142,7 +139,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2504119000
+              "duration": 3162109000
             }
           }
         ]
@@ -176,7 +173,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12216310000
+              "duration": 8232673000
             }
           },
           {
@@ -194,7 +191,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3616490000
+              "duration": 6808755000
             }
           },
           {
@@ -212,7 +209,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1108824000
+              "duration": 2211628000
             }
           }
         ]
@@ -246,7 +243,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14635975000
+              "duration": 2719324000
             }
           },
           {
@@ -264,7 +261,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3254159000
+              "duration": 3315184000
             }
           },
           {
@@ -282,7 +279,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1979075000
+              "duration": 1824667000
             }
           }
         ]
@@ -316,7 +313,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7406271000
+              "duration": 12787227000
             }
           },
           {
@@ -334,7 +331,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4130897000
+              "duration": 4484048000
             }
           },
           {
@@ -352,7 +349,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8695018000
+              "duration": 10525983000
             }
           }
         ]
@@ -386,7 +383,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3307448000
+              "duration": 2927276000
             }
           },
           {
@@ -404,7 +401,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3276323000
+              "duration": 4591162000
             }
           },
           {
@@ -422,7 +419,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6548676000
+              "duration": 8674079000
             }
           }
         ]
@@ -456,7 +453,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8185330000
+              "duration": 4121957000
             }
           },
           {
@@ -469,7 +466,7 @@
             "result": {
               "status": "failed",
               "error_message": "expected: false\n     got: true (using ==) (RSpec::Expectations::ExpectationNotMetError)\n./features/step_definitions/basic_internet_search_steps.rb:22:in `/^I search for a ridiculously small number of results$/'\nfeatures/basic_internet_search.feature:46:in `When I search for a ridiculously small number of results'\nfeatures/basic_internet_search.feature:42:in `When I search for a ridiculously small number of results'",
-              "duration": 1000999
+              "duration": 0
             }
           },
           {
@@ -520,7 +517,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3140134000
+              "duration": 6120254000
             }
           },
           {
@@ -533,7 +530,7 @@
             "result": {
               "status": "failed",
               "error_message": "expected: false\n     got: true (using ==) (RSpec::Expectations::ExpectationNotMetError)\n./features/step_definitions/basic_internet_search_steps.rb:22:in `/^I search for a ridiculously small number of results$/'\nfeatures/basic_internet_search.feature:47:in `When I search for a ridiculously small number of results'\nfeatures/basic_internet_search.feature:42:in `When I search for a ridiculously small number of results'",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -634,7 +631,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 25017000
+              "duration": 43029000
             }
           }
         ]
@@ -1134,7 +1131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1002000
             }
           },
           {
@@ -1152,7 +1149,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
@@ -1338,7 +1335,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000999
             }
           },
           {
@@ -1476,7 +1473,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 152143000
+              "duration": 219206000
             }
           },
           {
@@ -1538,7 +1535,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8678413000
+              "duration": 8961124000
             }
           },
           {
@@ -1550,7 +1547,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8241246000
+              "duration": 11394421000
             }
           },
           {
@@ -1562,8 +1559,8 @@
             },
             "result": {
               "status": "failed",
-              "error_message": "uninitialized constant GmailInboxPage (NameError)\n./features/step_definitions/gmail_steps.rb:12:in `/^I should see my inbox$/'\nfeatures/gmail.feature:10:in `Then I should see my inbox'",
-              "duration": 1000000
+              "error_message": "no block given (yield) (LocalJumpError)\n./features/pages/google/gmail_inbox_page.rb:3:in `is_current_page?'\n./features/step_definitions/gmail_steps.rb:13:in `/^I should see my inbox$/'\nfeatures/gmail.feature:10:in `Then I should see my inbox'",
+              "duration": 3357376000
             }
           }
         ]
